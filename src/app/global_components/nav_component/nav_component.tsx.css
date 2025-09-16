@@ -6,6 +6,7 @@ nav {
     padding-inline: 5rem;
     width: 100%;
     align-items: center;
+    position: relative;
 }
 
 .logo-image {
@@ -34,11 +35,12 @@ nav {
         position: absolute;
         top: 7rem;
     }
+
     .nav-menu ul {
         flex-direction: column;
-        width: 100vw;
         height: fit-content;
         justify-content: center;
+        width: 100%;
     }
 
     .nav-menu li {
@@ -62,14 +64,20 @@ nav {
         border: 1px solid black;
         border-radius: 5%;
         justify-content: space-around;
+        align-items: center;
     }
 
     .nav-menu-button div {
-        width: 100%;
+        width: 75%;
         height: fit-content;
         text-align: center;
         justify-content: center;
         align-items: center;
-        transform: scaleX(3);
+    }
+
+    .nav-menu-button div hr {
+        border: none;
+        background-color: black;
+        height: 2px;
     }
 }

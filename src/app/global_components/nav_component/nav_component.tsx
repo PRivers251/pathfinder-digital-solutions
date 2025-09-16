@@ -13,6 +13,12 @@ export default function Nav() {
             alt="Main Pathfinder Logo"
             />
             </div>
+            
+            <div className="nav-menu-button">
+                <div><hr /></div>
+                <div><hr /></div>
+                <div><hr /></div>
+            </div>
 
             <div className="nav-menu">
                 <ul>
@@ -32,11 +38,7 @@ export default function Nav() {
                 </ul>
             </div>
 
-            <div className="nav-menu-button">
-                <div>-</div>
-                <div>-</div>
-                <div>-</div>
-            </div>
+            
         </nav>
     )
 }
