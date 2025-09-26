@@ -5,22 +5,23 @@ export default function Nav() {
     return (
         <nav className="navbar">
 
-            <div className="logo-image">
+            <div className="logo-image-container">
             <Image
             src={'/images/PathFinderDigital_LogoMain.png'}
             width={300}
             height={100}
             alt="Main Pathfinder Logo"
+            id="logo-image"
             />
             </div>
             
-            <div className="nav-menu-button">
+            {/* <div className="nav-menu-button">
                 <div><hr /></div>
                 <div><hr /></div>
                 <div><hr /></div>
-            </div>
+            </div> */}
 
-            <div className="nav-menu">
+            {/* <div className="nav-menu">
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -36,7 +37,7 @@ export default function Nav() {
                     </li>
 
                 </ul>
-            </div>
+            </div> */}
 
             
         </nav>
