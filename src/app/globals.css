@@ -4,6 +4,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary_color: #022680;
+  --main_screen_break: 500px;
 }
 
 @theme inline {
@@ -31,9 +32,9 @@ main {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: bolder;
-  line-height: 35px;
+  line-height: 39px;
 }
 
 h2 {
@@ -51,28 +52,24 @@ p, li {
   line-height: 1.4rem;
 }
 
-strong {
-  text-decoration: underline;
-}
-
 button {
   width: fit-content;
 }
 
-button.small_screen {
+.small_screen {
   display: inline-block;
 }
 
-button.large_screen {
+.large_screen {
   display: none;
 }
 
-@media (width > 450px) {
-  button.small_screen {
+@media (width > 700px) {
+  .small_screen {
     display: none;
   }
 
-  button.large_screen {
+  .large_screen {
     display: inline-block;
   }
 }
