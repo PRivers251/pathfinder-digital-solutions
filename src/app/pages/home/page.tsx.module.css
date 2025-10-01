@@ -93,11 +93,10 @@
 
 .problem_section {
     padding-block: 3rem;
+    max-width: 55rem;
+    margin:auto;
 }
 
-.problem_section_title_container {
-    max-width: 60rem;
-}
 
 .problem_section_content ul li {
     margin-block: 2rem;

@@ -56,6 +56,10 @@ button {
   width: fit-content;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .small_screen {
   display: inline-block;
 }
