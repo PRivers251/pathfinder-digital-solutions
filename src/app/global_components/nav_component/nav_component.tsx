@@ -7,7 +7,7 @@ export default function Nav() {
 
             <div className="logo-image-container">
             <Image
-            src={'/images/PathFinderDigital_LogoMain.png'}
+            src={'/images/main_logo.png'}
             width={300}
             height={100}
             alt="Main Pathfinder Logo"
