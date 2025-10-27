@@ -1,7 +1,19 @@
+"use client"
+
 import Image from "next/image"
 import "./nav_component.tsx.css"
+import { useState } from "react"
+import { FaArrowCircleDown } from 'react-icons/fa';
+import { FaArrowCircleUp } from 'react-icons/fa';
 
 export default function Nav() {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+    
+    const handleMenuToggle = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
         <nav className="navbar">
 
@@ -15,13 +27,13 @@ export default function Nav() {
             />
             </div>
             
-            {/* <div className="nav-menu-button">
-                <div><hr /></div>
-                <div><hr /></div>
-                <div><hr /></div>
-            </div> */}
+            <div className="nav-menu-button" onClick={handleMenuToggle}>
+                <h4>Menu</h4>
+                {menuOpen ? <FaArrowCircleUp className="menu-button-icon"/> : <FaArrowCircleDown className="menu-button-icon"/>}
+            </div> 
 
-            {/* <div className="nav-menu">
+            {/* Large Screen Nav Menu */}
+            <div className="nav-menu">
                 <ul>
                     <li>
                         <a href="#">Home</a>
@@ -37,7 +49,26 @@ export default function Nav() {
                     </li>
 
                 </ul>
-            </div> */}
+            </div>
+
+            {/* Mobile Nav Menu */}
+            <div className={menuOpen ? "mobile-nav-menu on" : "mobile-nav-menu off"}>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
 
             
         </nav>
