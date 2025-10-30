@@ -87,6 +87,10 @@
   }
 }
 
+html, body {
+  overscroll-behavior: none;
+}
+
 main {
   padding-inline: 3rem;
 }
