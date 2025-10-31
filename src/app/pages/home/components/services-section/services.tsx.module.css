@@ -1,0 +1,12 @@
+
+.services_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .services_section {
+        flex-direction: column;
+    }
+}

@@ -21,11 +21,11 @@ export default function HeroSection() {
 
         <div className={styles.subhead_container}>
             <h3>
-                Stop losing customers to outdated websites. Pat Rivers Web Development & Design builds fast, mobile-friendly sites that grow your business, right here in the Mobile area.
+                Stop losing customers to outdated websites. <span>Pat Rivers Web Development & Design builds fast, mobile-friendly sites that grow your business</span>, right here in the Mobile area.
             </h3>
         </div>
 
-        <a href="">Connect With Me!</a>
+        <a href="">Let's Get Started!</a>
         </section>
     )
 }
