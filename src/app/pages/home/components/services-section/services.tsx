@@ -16,7 +16,8 @@ export default function Services(){
                 />
 
                 <CardContent>
-                    Speak directly to your customers.
+                    <p>Speak directly to your customer's problems, needs, & wants.</p>
+                    <p>Present clear and compelling offers that get to the heart of solving your customer's problems.</p>
                 </CardContent>
                 
             </Card>
